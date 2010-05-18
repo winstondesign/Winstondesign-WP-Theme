@@ -1,0 +1,213 @@
+#content .inner:after,
+#footer .inner:after,
+.navigation:after {
+  content:".";
+  display:block;
+  height:0;
+  line-height:0;
+  clear:both;
+  visibility:hidden; }
+
+body {
+  margin:0;
+  padding:0;
+  background:rgb(235,234,227);
+  color:#000;
+  font:normal 75%/1.5em "ff-meta-serif-web-pro-1","ff-meta-serif-web-pro-2", georgia, "Times New Roman", serif; }
+
+p {margin:0 0 1em 0;}
+
+ul {
+  margin:0 0 1em 0;
+  padding:0; 
+  list-style:square;}
+  ul li, 
+  ol li {margin:0;}
+
+a:link {color:#000;}
+a:visited {color:#555;}
+a:hover {
+  color:#900;
+  text-decoration:none; }
+a:active {
+  color:#900; }
+
+strong {color:#000;}
+
+h1 {
+  margin:1em 0 .5em 0;
+  font-weight:normal;
+  font-size:4em;
+  line-height:1em;
+  color:#000; 
+  letter-spacing:-.02em;
+  font-family:"adelle-1","adelle-2"; }
+h2 {
+  margin:1.8em 0 .2em 0;
+  font-weight:normal;
+  font-size:2em;
+  line-height:1em; }
+  h2 a {line-height:.9;text-decoration:none;}
+  h2 .date {
+    margin-left:1em;
+    font-size:.65em; }
+h3 {
+  margin:1.5em 0 .75em 0;
+  font-weight:normal;
+  font-size:1.3333em;
+  line-height:1.5em; 
+  text-transform:uppercase; 
+  letter-spacing:.2em;
+  color:#000; }
+address {font-style:normal;}
+
+
+.date {
+  font-family:"ff-meta-web-pro-1","ff-meta-web-pro-2";
+  color:rgb(162,158,133); }
+
+body.single .post .date {
+  display:block; 
+  margin:-1em 0 1em 0; 
+  font-size:1.3333em;
+  line-height:1.5em; }
+
+#wrap {
+  width:950px;
+  margin:0 auto 0 auto; 
+  background:#fff; }
+
+#content #c_1 p,
+#content #c_1 li,
+#content #c_1 .navigation {
+  font-size:1.3333em;
+  line-height:1.5em; }
+  #content #c_1 li p {font-size:1em;}
+#content #c_1 p {
+  margin-bottom:.75em; }
+
+.navigation {margin-top:3em;}
+  .navigation .previous {float:left;}
+  .navigation .next {float:right;}
+
+#content #c_2 {}
+  #content #c_2 h2,
+  #footer .widget h2 {
+    font-size:1em;
+    line-height:1.5em;
+    font-family:"ff-meta-web-pro-1","ff-meta-web-pro-2";
+    font-family:"adelle-1","adelle-2";
+    text-transform:uppercase;
+    letter-spacing:.2em;
+    color:#000; }
+  #content #c_2 ul {list-style:none;}
+  #content #c_2 .widget_pages {
+    margin-top:4em;
+    margin-bottom:4em; }
+    #content #c_2 .widget_pages li {
+      font-size:1.5em;
+      line-height:1.5em; }
+    #content #c_2 .widget_pages li a {
+      text-decoration:none;}
+    #content #c_2 .widget_pages .current_page_item a {font-style:italic;}
+
+#content .inner,
+#header .inner,
+#footer .inner {
+  width:810px;
+  margin:0 auto 0 auto; }
+
+.announcement {
+  margin:0 0 0 0;
+  font-size:1.0833em; 
+  padding:.4em 70px .6em 70px;
+  background:#FFE470; }
+  .announcement strong {
+    letter-spacing:.1em;
+    text-transform:uppercase; }
+
+#header {
+  padding:3em 0 3em; }
+  #header #logo {
+    margin:.15em 0 -.15em 0;
+    font:bold 2em/1 helvetica, sans-serif;
+    text-transform:uppercase;
+    letter-spacing:-.05em; 
+    text-indent:-9999px;
+    background:transparent url(logo.png) 0 0 no-repeat; }
+    #header #logo a {
+      display:block;
+      text-decoration:none;}
+  #header #searchform {
+    float:right;
+    width:250px; }
+    #header #searchform #search {
+      border:none;
+      border-bottom:2px dotted #ddd; }
+  #header h1 {
+    font-size:5em;
+    line-height:1;
+    margin-bottom:0; }
+  #header .description {
+    margin-top:.5em;
+    font-size:2em;
+    line-height:1.25; 
+    color:#555; }
+
+#content .inner {
+  margin-top:-1px;
+  border-top:1px solid #eee;
+  padding:1px 0 9.45em 0; }
+  #content #c_1 {
+    float:left;
+    width:510px; 
+    margin-right:50px; }
+  #content #c_2 {
+    float:left;
+    width:250px; }
+
+#footer {
+  padding-top:2em;
+  padding-bottom:2em; }
+  #footer .column {
+    margin:0 30px 2em 0;
+    border-top:1em solid #000;
+    float:left;
+    width:250px; }
+    #footer .column p,
+    #footer .column li,
+    #footer .column .vcard {
+      font-size:1.1666em; }
+    #footer .column li {margin-bottom:.5em;}
+  #footer .last {margin-right:0;}
+
+.vcard {}
+  .vcard .link-to-map {display:block;}
+
+#grid {
+  background: url(bg-grid-890.gif) repeat-y 0 0;
+  /* Dimensions - same width as your grid with gutters */
+  width: 890px;
+  /* Grid (left-aligned)
+  position: absolute;
+  top: 0;
+  left: 0;
+  */
+  /* Grid (centered) */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -445px; }
+
+  /**
+   * Horizontal grid lines, defined by your base line height
+   *
+   * Remember, the CSS properties that define the box model:
+   * visible height = height + borders + margins + padding
+   */
+  #grid .horiz {
+    /* 20px line height */
+    height: 11px;
+    border-bottom: 1px dotted #555;
+    margin: 0;
+    padding: 0; }
