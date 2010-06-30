@@ -11,8 +11,9 @@ get_header(); ?>
     <?php while (have_posts()) : the_post(); ?>
       <div <?php post_class() ?> id="post-<?php the_ID(); ?>">
         <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?> <span class="date"><?php the_time('F jS, Y') ?></span></a></h2>
-        <div class="entry">
-          <?php the_excerpt('Read the rest of this entry &raquo;'); ?>
+        <div class="excerpt">
+          <?php the_excerpt(); ?>
+          <a href="<?php the_permalink() ?>" class="continue">Read <?php the_title(); ?></a>
         </div>
       </div>
     <?php endwhile; ?>

@@ -14,22 +14,20 @@
 		return;
 	}
 ?>
-
-<!-- You can start editing here. -->
+<h2 id="comments"><?php comments_number('No one has responded yet', 'One Response', '% Responses' );?> to &#8220;<?php the_title(); ?>&#8221;</h2>
 
 <?php if ( have_comments() ) : ?>
-	<h2 id="comments"><?php comments_number('No Responses', 'One Response', '% Responses' );?> to &#8220;<?php the_title(); ?>&#8221;</h2>
 
-	<div class="navigation">
+	<div class="comment-navigation">
 		<div class="alignleft"><?php previous_comments_link() ?></div>
 		<div class="alignright"><?php next_comments_link() ?></div>
 	</div>
 
 	<ol class="commentlist">
-	<?php wp_list_comments(); ?>
+	<?php wp_list_comments(array("avatar_size" => "48", "callback" => "mytheme_comment")); ?>
 	</ol>
 
-	<div class="navigation">
+	<div class="comment-navigation">
 		<div class="alignleft"><?php previous_comments_link() ?></div>
 		<div class="alignright"><?php next_comments_link() ?></div>
 	</div>
